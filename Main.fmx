@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'VideoFramer'
+  ClientHeight = 410
+  ClientWidth = 870
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 360.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    StyledSettings = [Size, FontColor]
+    TextSettings.Font.Family = #65325#65331' '#12468#12471#12483#12463
+    Position.X = 660.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 390.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 386.000000000000000000
+  end
+  object ScrollBar1: TScrollBar
+    SmallChange = 0.000000000000000000
+    Orientation = Horizontal
+    Position.X = 10.000000000000000000
+    Position.Y = 380.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnChange = ScrollBar1Change
+  end
+end
